@@ -1,0 +1,65 @@
+object Form4: TForm4
+  Left = 316
+  Height = 449
+  Top = 180
+  Width = 516
+  BorderStyle = bsDialog
+  Caption = 'Show All Users'
+  ClientHeight = 449
+  ClientWidth = 516
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '2.2.4.0'
+  object DBGrid1: TDBGrid
+    Left = 24
+    Height = 304
+    Top = 32
+    Width = 472
+    AutoEdit = False
+    Color = clWindow
+    Columns = <>
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 24
+    Height = 40
+    Top = 392
+    Width = 470
+    Caption = 'refrech'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 24
+    Height = 31
+    Top = 352
+    Width = 470
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 31
+    ClientWidth = 470
+    DataSource = DataSource2
+    Options = []
+    TabOrder = 2
+  end
+  object DataSource2: TDataSource
+    DataSet = Form2.SQLQuery1
+    Left = 161
+    Top = 27
+  end
+  object SQLQuery2: TSQLQuery
+    FieldDefs = <>
+    Database = Form2.SQLite3Connection1
+    Transaction = Form2.SQLTransaction1
+    Params = <>
+    Macros = <>
+    Left = 256
+    Top = 40
+  end
+end

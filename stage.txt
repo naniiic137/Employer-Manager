@@ -1,0 +1,16 @@
+Cin 44
+Nom : nnn
+Prenom : bnb
+Sexe : F
+Diplome vise : nbvn
+Nom : nnn
+Specialite : bnvn
+Etablissement :  nbvn
+Nom : nnn
+Tel stagiaire :  4
+Nationalite :  bvc
+Etat de Stage : accept
+Date de debut : 30/12/1899
+Date de fin : 30/12/1899
+Nanture de Stage :  nbvn
+Letter Affictation :  Yes

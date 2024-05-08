@@ -1,0 +1,1674 @@
+object Form2: TForm2
+  Left = 15
+  Height = 831
+  Top = 67
+  Width = 1891
+  BorderStyle = bsDialog
+  Caption = 'gestion de stager'
+  ClientHeight = 831
+  ClientWidth = 1891
+  Color = clInactiveCaption
+  DesignTimePPI = 120
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '2.2.4.0'
+  object PageControl1: TPageControl
+    Left = 8
+    Height = 784
+    Top = 16
+    Width = 1224
+    ActivePage = TabSheet1
+    TabIndex = 0
+    TabOrder = 0
+    OnEnter = PageControl1Enter
+    object TabSheet1: TTabSheet
+      Caption = 'Recherch'
+      ClientHeight = 751
+      ClientWidth = 1216
+      OnContextPopup = TabSheet1ContextPopup
+      object Label1: TLabel
+        Left = 24
+        Height = 41
+        Top = 32
+        Width = 46
+        Caption = 'Cin'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -30
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit1: TEdit
+        Left = 96
+        Height = 41
+        Top = 32
+        Width = 184
+        AutoSize = False
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -17
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        MaxLength = 8
+        NumbersOnly = True
+        ParentFont = False
+        TabOrder = 0
+      end
+      object Button1: TButton
+        Left = 320
+        Height = 41
+        Top = 32
+        Width = 120
+        Caption = 'Afficher'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -23
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        OnClick = Button1Click
+        ParentFont = False
+        TabOrder = 1
+      end
+      object Label2: TLabel
+        Left = 24
+        Height = 37
+        Top = 120
+        Width = 77
+        Caption = 'Nom :'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -27
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label3: TLabel
+        Left = 144
+        Height = 1
+        Top = 120
+        Width = 1
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -23
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label4: TLabel
+        Left = 24
+        Height = 37
+        Top = 184
+        Width = 115
+        Caption = 'Prenom :'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -27
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label5: TLabel
+        Left = 176
+        Height = 1
+        Top = 190
+        Width = 1
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -23
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label6: TLabel
+        Left = 27
+        Height = 37
+        Top = 248
+        Width = 74
+        Caption = 'Sexe :'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -27
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label7: TLabel
+        Left = 136
+        Height = 1
+        Top = 254
+        Width = 1
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -23
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label8: TLabel
+        Left = 27
+        Height = 37
+        Top = 320
+        Width = 181
+        Caption = 'Diplome vise :'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -27
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label9: TLabel
+        Left = 248
+        Height = 1
+        Top = 326
+        Width = 1
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -23
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label10: TLabel
+        Left = 27
+        Height = 37
+        Top = 400
+        Width = 139
+        Caption = 'Specialite :'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -27
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label11: TLabel
+        Left = 192
+        Height = 1
+        Top = 406
+        Width = 1
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -23
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label12: TLabel
+        Left = 400
+        Height = 37
+        Top = 120
+        Width = 200
+        Caption = 'Etablissement : '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -27
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label13: TLabel
+        Left = 632
+        Height = 1
+        Top = 126
+        Width = 1
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -23
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label14: TLabel
+        Left = 400
+        Height = 37
+        Top = 192
+        Width = 177
+        Caption = 'Tel stagiaire : '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -27
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label15: TLabel
+        Left = 624
+        Height = 1
+        Top = 198
+        Width = 1
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -23
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label16: TLabel
+        Left = 816
+        Height = 37
+        Top = 120
+        Width = 166
+        Caption = 'Nationalite : '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -27
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label17: TLabel
+        Left = 1024
+        Height = 1
+        Top = 126
+        Width = 1
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -23
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label18: TLabel
+        Left = 816
+        Height = 37
+        Top = 192
+        Width = 183
+        Caption = 'Etat de Stage :'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -27
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label19: TLabel
+        Left = 1048
+        Height = 1
+        Top = 198
+        Width = 1
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -23
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label20: TLabel
+        Left = 816
+        Height = 37
+        Top = 272
+        Width = 197
+        Caption = 'Date de debut :'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -27
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label21: TLabel
+        Left = 1056
+        Height = 1
+        Top = 278
+        Width = 1
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -23
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label22: TLabel
+        Left = 816
+        Height = 37
+        Top = 344
+        Width = 155
+        Caption = 'Date de fin :'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -27
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label23: TLabel
+        Left = 1016
+        Height = 1
+        Top = 350
+        Width = 1
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -23
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label24: TLabel
+        Left = 24
+        Height = 37
+        Top = 480
+        Width = 244
+        Caption = 'Nanture de Stage : '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -27
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label25: TLabel
+        Left = 304
+        Height = 1
+        Top = 486
+        Width = 1
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -23
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Button9: TButton
+        Left = 816
+        Height = 63
+        Top = 408
+        Width = 232
+        Caption = 'archive'
+        OnClick = Button9Click
+        TabOrder = 2
+      end
+      object Button10: TButton
+        Left = 816
+        Height = 63
+        Top = 486
+        Width = 232
+        Caption = 'File'
+        OnClick = Button10Click
+        TabOrder = 3
+      end
+      object Label79: TLabel
+        Left = 400
+        Height = 37
+        Top = 278
+        Width = 243
+        Caption = 'Letter Affictation : '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -27
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label80: TLabel
+        Left = 672
+        Height = 1
+        Top = 284
+        Width = 1
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -23
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Ajout'
+      ClientHeight = 751
+      ClientWidth = 1216
+      object Label26: TLabel
+        Left = 24
+        Height = 28
+        Top = 120
+        Width = 57
+        Caption = 'Nom :'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label27: TLabel
+        Left = 24
+        Height = 28
+        Top = 184
+        Width = 84
+        Caption = 'Prenom :'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label28: TLabel
+        Left = 24
+        Height = 28
+        Top = 264
+        Width = 55
+        Caption = 'Sexe :'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label29: TLabel
+        Left = 24
+        Height = 28
+        Top = 328
+        Width = 134
+        Caption = 'Diplome vise :'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label30: TLabel
+        Left = 24
+        Height = 28
+        Top = 400
+        Width = 103
+        Caption = 'Specialite :'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label31: TLabel
+        Left = 24
+        Height = 28
+        Top = 472
+        Width = 183
+        Caption = 'Nanture de Stage : '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label32: TLabel
+        Left = 568
+        Height = 28
+        Top = 184
+        Width = 149
+        Caption = 'Etablissement : '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label33: TLabel
+        Left = 568
+        Height = 28
+        Top = 256
+        Width = 132
+        Caption = 'Tel stagiaire : '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label34: TLabel
+        Left = 568
+        Height = 28
+        Top = 328
+        Width = 124
+        Caption = 'Nationalite : '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label35: TLabel
+        Left = 568
+        Height = 28
+        Top = 400
+        Width = 137
+        Caption = 'Etat de Stage :'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label36: TLabel
+        Left = 568
+        Height = 28
+        Top = 47
+        Width = 146
+        Caption = 'Date de debut :'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label37: TLabel
+        Left = 568
+        Height = 28
+        Top = 120
+        Width = 117
+        Caption = 'Date de fin :'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label38: TLabel
+        Left = 24
+        Height = 28
+        Top = 47
+        Width = 41
+        Caption = 'Cin :'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object cin: TEdit
+        Left = 268
+        Height = 28
+        Top = 48
+        Width = 144
+        AutoSize = False
+        MaxLength = 8
+        NumbersOnly = True
+        TabOrder = 0
+      end
+      object nom: TEdit
+        Left = 268
+        Height = 28
+        Top = 121
+        Width = 144
+        AutoSize = False
+        TabOrder = 1
+      end
+      object prenom: TEdit
+        Left = 268
+        Height = 28
+        Top = 184
+        Width = 144
+        AutoSize = False
+        TabOrder = 2
+      end
+      object dip: TEdit
+        Left = 268
+        Height = 28
+        Top = 328
+        Width = 144
+        AutoSize = False
+        TabOrder = 3
+      end
+      object spe: TEdit
+        Left = 268
+        Height = 28
+        Top = 401
+        Width = 144
+        AutoSize = False
+        TabOrder = 4
+      end
+      object nat: TEdit
+        Left = 268
+        Height = 28
+        Top = 472
+        Width = 144
+        AutoSize = False
+        TabOrder = 5
+      end
+      object etat: TComboBox
+        Left = 784
+        Height = 28
+        Top = 401
+        Width = 144
+        ItemHeight = 20
+        ItemIndex = 0
+        Items.Strings = (
+          'accept'
+          'refuse'
+          'en cour'
+        )
+        OnChange = etatChange
+        TabOrder = 6
+        Text = 'accept'
+      end
+      object fac: TEdit
+        Left = 784
+        Height = 28
+        Top = 192
+        Width = 144
+        AutoSize = False
+        TabOrder = 7
+      end
+      object tel: TEdit
+        Left = 785
+        Height = 28
+        Top = 264
+        Width = 144
+        AutoSize = False
+        MaxLength = 8
+        NumbersOnly = True
+        TabOrder = 8
+      end
+      object national: TEdit
+        Left = 786
+        Height = 28
+        Top = 328
+        Width = 144
+        AutoSize = False
+        TabOrder = 9
+      end
+      object Button2: TButton
+        Left = 920
+        Height = 55
+        Top = 488
+        Width = 216
+        Caption = 'Ajout'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -17
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        OnClick = Button2Click
+        ParentFont = False
+        TabOrder = 10
+      end
+      object dated: TDateEdit
+        Left = 784
+        Height = 28
+        Top = 48
+        Width = 145
+        CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+        DefaultToday = True
+        DateOrder = doNone
+        ButtonWidth = 29
+        NumGlyphs = 1
+        MaxLength = 0
+        TabOrder = 11
+      end
+      object datef: TDateEdit
+        Left = 785
+        Height = 28
+        Top = 121
+        Width = 145
+        CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+        DefaultToday = True
+        DateOrder = doNone
+        ButtonWidth = 29
+        NumGlyphs = 1
+        MaxLength = 0
+        TabOrder = 12
+      end
+      object RadioButton1: TRadioButton
+        Left = 256
+        Height = 41
+        Top = 268
+        Width = 50
+        Caption = 'M'
+        Checked = True
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -27
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 14
+        TabStop = True
+      end
+      object RadioButton2: TRadioButton
+        Left = 381
+        Height = 41
+        Top = 268
+        Width = 38
+        Caption = 'F'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -27
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 13
+      end
+      object Label77: TLabel
+        Left = 568
+        Height = 28
+        Top = 472
+        Width = 175
+        Caption = 'letter affictation : '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object RadioButton5: TRadioButton
+        Left = 800
+        Height = 32
+        Top = 464
+        Width = 56
+        Caption = 'Yes'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 15
+      end
+      object RadioButton6: TRadioButton
+        Left = 800
+        Height = 32
+        Top = 504
+        Width = 52
+        Caption = 'No'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 16
+      end
+    end
+    object TabSheet4: TTabSheet
+      Caption = 'Modifier'
+      ClientHeight = 751
+      ClientWidth = 1216
+      object Label64: TLabel
+        Left = 16
+        Height = 28
+        Top = 24
+        Width = 41
+        Caption = 'Cin :'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit14: TEdit
+        Left = 88
+        Height = 28
+        Top = 24
+        Width = 144
+        AutoSize = False
+        MaxLength = 8
+        NumbersOnly = True
+        TabOrder = 0
+      end
+      object Label65: TLabel
+        Left = 568
+        Height = 28
+        Top = 47
+        Width = 146
+        Caption = 'Date de debut :'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label66: TLabel
+        Left = 24
+        Height = 28
+        Top = 120
+        Width = 57
+        Caption = 'Nom :'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit16: TEdit
+        Left = 268
+        Height = 28
+        Top = 121
+        Width = 144
+        AutoSize = False
+        TabOrder = 1
+      end
+      object Label67: TLabel
+        Left = 568
+        Height = 28
+        Top = 120
+        Width = 117
+        Caption = 'Date de fin :'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label68: TLabel
+        Left = 24
+        Height = 28
+        Top = 184
+        Width = 84
+        Caption = 'Prenom :'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit18: TEdit
+        Left = 268
+        Height = 28
+        Top = 192
+        Width = 144
+        AutoSize = False
+        TabOrder = 2
+      end
+      object Label69: TLabel
+        Left = 568
+        Height = 28
+        Top = 184
+        Width = 149
+        Caption = 'Etablissement : '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit19: TEdit
+        Left = 784
+        Height = 28
+        Top = 184
+        Width = 144
+        AutoSize = False
+        TabOrder = 3
+      end
+      object Label70: TLabel
+        Left = 24
+        Height = 28
+        Top = 264
+        Width = 55
+        Caption = 'Sexe :'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object RadioButton3: TRadioButton
+        Left = 268
+        Height = 28
+        Top = 264
+        Width = 52
+        AutoSize = False
+        Caption = 'M'
+        TabOrder = 4
+      end
+      object RadioButton4: TRadioButton
+        Left = 352
+        Height = 28
+        Top = 264
+        Width = 60
+        AutoSize = False
+        Caption = 'F'
+        TabOrder = 5
+      end
+      object Label71: TLabel
+        Left = 568
+        Height = 28
+        Top = 256
+        Width = 132
+        Caption = 'Tel stagiaire : '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit20: TEdit
+        Left = 784
+        Height = 28
+        Top = 256
+        Width = 144
+        AutoSize = False
+        TabOrder = 6
+      end
+      object Label72: TLabel
+        Left = 24
+        Height = 28
+        Top = 328
+        Width = 134
+        Caption = 'Diplome vise :'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit21: TEdit
+        Left = 268
+        Height = 28
+        Top = 329
+        Width = 144
+        AutoSize = False
+        OnChange = Edit21Change
+        TabOrder = 7
+      end
+      object Label73: TLabel
+        Left = 568
+        Height = 28
+        Top = 328
+        Width = 124
+        Caption = 'Nationalite : '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit22: TEdit
+        Left = 784
+        Height = 28
+        Top = 336
+        Width = 144
+        AutoSize = False
+        TabOrder = 8
+      end
+      object Label74: TLabel
+        Left = 24
+        Height = 28
+        Top = 400
+        Width = 103
+        Caption = 'Specialite :'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit23: TEdit
+        Left = 268
+        Height = 28
+        Top = 401
+        Width = 144
+        AutoSize = False
+        TabOrder = 9
+      end
+      object Label75: TLabel
+        Left = 568
+        Height = 28
+        Top = 400
+        Width = 137
+        Caption = 'Etat de Stage :'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object ComboBox2: TComboBox
+        Left = 784
+        Height = 28
+        Top = 400
+        Width = 146
+        ItemHeight = 20
+        ItemIndex = 0
+        Items.Strings = (
+          'accept'
+          'refuse'
+          'en cour'
+        )
+        OnChange = etatChange
+        TabOrder = 10
+        Text = 'accept'
+      end
+      object Label76: TLabel
+        Left = 24
+        Height = 28
+        Top = 472
+        Width = 183
+        Caption = 'Nanture de Stage : '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Edit24: TEdit
+        Left = 268
+        Height = 28
+        Top = 469
+        Width = 144
+        AutoSize = False
+        TabOrder = 11
+      end
+      object Button5: TButton
+        Left = 264
+        Height = 28
+        Top = 24
+        Width = 144
+        Caption = 'Recherch'
+        OnClick = Button5Click
+        TabOrder = 12
+      end
+      object Button6: TButton
+        Left = 912
+        Height = 64
+        Top = 472
+        Width = 240
+        Caption = 'Update'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -17
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        OnClick = Button6Click
+        ParentFont = False
+        TabOrder = 13
+      end
+      object DateEdit3: TDateEdit
+        Left = 784
+        Height = 28
+        Top = 47
+        Width = 146
+        CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+        DateOrder = doNone
+        ButtonWidth = 29
+        NumGlyphs = 1
+        MaxLength = 0
+        TabOrder = 14
+      end
+      object DateEdit4: TDateEdit
+        Left = 784
+        Height = 28
+        Top = 120
+        Width = 146
+        CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+        DateOrder = doNone
+        ButtonWidth = 29
+        NumGlyphs = 1
+        MaxLength = 0
+        TabOrder = 15
+      end
+      object Label78: TLabel
+        Left = 568
+        Height = 28
+        Top = 473
+        Width = 175
+        Caption = 'letter affictation : '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -20
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object RadioButton7: TRadioButton
+        Left = 800
+        Height = 27
+        Top = 469
+        Width = 50
+        Caption = 'Yes'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -17
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 16
+      end
+      object RadioButton8: TRadioButton
+        Left = 800
+        Height = 27
+        Top = 520
+        Width = 47
+        Caption = 'No'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -17
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 17
+      end
+    end
+    object TabSheet5: TTabSheet
+      Caption = 'Data Grid'
+      ClientHeight = 751
+      ClientWidth = 1216
+      object DBGrid1: TDBGrid
+        Left = 16
+        Height = 400
+        Top = 96
+        Width = 1184
+        Color = clWindow
+        Columns = <>
+        ReadOnly = True
+        TabOrder = 0
+      end
+      object Button7: TButton
+        Left = 16
+        Height = 111
+        Top = 520
+        Width = 470
+        Caption = 'Normal Data'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -27
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        OnClick = Button7Click
+        ParentFont = False
+        TabOrder = 1
+      end
+      object Button3: TButton
+        Left = 728
+        Height = 111
+        Top = 520
+        Width = 472
+        Caption = 'Archive Data'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -27
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        OnClick = Button3Click
+        ParentFont = False
+        TabOrder = 2
+      end
+      object Label39: TLabel
+        Left = 464
+        Height = 1
+        Top = 16
+        Width = 1
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -40
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+  end
+  object Button8: TButton
+    Left = 1376
+    Height = 112
+    Top = 688
+    Width = 366
+    Caption = 'Logout'
+    OnClick = Button8Click
+    TabOrder = 1
+  end
+  object Image1: TImage
+    Left = 1248
+    Height = 352
+    Top = 16
+    Width = 633
+    Picture.Data = {
+      1754506F727461626C654E6574776F726B477261706869639E25000089504E47
+      0D0A1A0A0000000D4948445200000276000001610803000000CAB11775000003
+      00504C5445FFFFFF562C7C67BE642360AC29A99AE7D355F7903DED237EFBA92D
+      18B9A0FABD28EDEB64D6232AD95C751946836C2B8619ABDEE7469917356C1231
+      6A32A9E1772D8B81C564B53989FFFEFE2598BCEF403830A35CF99D5F1379B6FB
+      FBFC0424610E2D672D9A99092964EE342FF0502EF3693CF5F9FAB3B8C8F4F6F7
+      E9242D16864CF1F2F6243F732AB66DFDA52BF9F9FA5CBB63EE1E7DFBB920EDE8
+      5E7229871C386E2E47797383A42CA059194481B13587D52024BABFCDF04A2BE6
+      D7586F2184EC19788F9DB6F6B236EFD5543C5381465C879DA6BB8491ACEBEBF0
+      533485DBDBE4EE2C25F8C735EC2F82EDEE68E2EAEB682984C0C5D3F99B371DB5
+      9DC8CEDBFEFBF86B7DA0FDF2F1D1D5DE14A6D923A798FEF6F81758A823B09EA6
+      AFC2F99958E84395F8C7C61BBCA2F88E3AA0DBDC73C1606CBF647AC361F99F62
+      25A4DF4F2377E1E1E9F293BFEE3A32E63A92EBF3F483CBEB5D719884C99FF159
+      30E22E2EEB368AF99C49EF2384FDECEC259DC453668EF8954B2CAB9DF58B82E3
+      477AF9CDE0BB3A8A00185909B499BDDFDEF7B9B2FBD9D3A0BBDB0FB79D239B52
+      ADB4C62393B62DAB66ED5AA0F68242AF8FBBF26237D4161C8F65A2F1A4A7C9E2
+      EFD9CADF168FBDEB0D72F082B5FADDE07CD3C51C9FCEF9EEC0B997C3DE324BF3
+      736EDF5A5EAF298016417F1175B11C5190F9E3EBA27BB0CEE9D4DA4395E62666
+      F05655F5AECB611A7D25A8ACC66DA5613682481971C83E90219492A8D9BDFBF6
+      DAEB1C18F296940A4EA318A3921F5D9EDB283DEE6EAB5F2B8097C65FC6CE59B0
+      CA5C65779A9D368A58BFB21A82B8F7EDA384A4CEFCB42BE27176874697073879
+      FDD4B4EDEB6144B96C89CDC4C2E2C3D9D157E4818A892F88CF82B267A8CBECC1
+      D8F4836BD6AFCD3BAA9F1E8E54B7468F20AAC57A3D8F22AE8083C0D631A0D32E
+      9D9EE58F9E20B26575C2BAC0599B3588C062BAE5389D9B379672F0EE803369B0
+      FAB59059B07C78589141437FFBCB5DFDDA9386C875EF3D1AD696BE628AC1F9A5
+      72A9D69AB9DFB410357095CE894377B837C0A9B1A0C2A593B9FBD3740C7861CF
+      8848CE0004940480FB000022594944415478DAEC9D5F489BEB1DC7DB684A6D46
+      EA45E622A181B011C4921A6A2FE22E7A58CFC5BA314C59CED93966F1268B09B6
+      0C9D3723E095815A94B37108BD68BDAA3237581854A13ACE5AA6B5B0E33F8617
+      8A58A5525B4BC72614A5EDCE187BFEBC6FF2FE799237EF6B07267E3F69C11A5B
+      4AF2E1FBFBFD9EE779DF9C380100000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000020C4EDF67AFD1ABC5EB71BAF0CF83F19
+      4784EB09671289C53B77EE6CCF70B6EFDC594C24B2E126E21E5E22F0C19D3B9F
+      BDB932F3FEFDE0C0C0207DC890AF070622EF67B613991EA41EF8909CCFDC5C79
+      3E7B6E345737582713670F99C181BA787C6631136EC1AB053E887344B973A3E4
+      716E7428525792C1C1F73377323D78CDC0E168C9909823C649E4E27546E20DC6
+      DF93D43B8F970E58E5C6535A5A0BD6CD1A6AC7D48B7476CE6C67FC78FD808529
+      224B8B6BC139CA509DB17791CEDAE860C4F762751BE51698952EA3978E34779D
+      7143E708FD7575D1FB3EDF0B526D9BF05282B221D28D6AA5336EEEB874B5B59D
+      E4EB5A9FEFFE7D6A5E16C32D28AFBCCE3D173967A05DA7245D6D2D1978E3111F
+      8598B7BA9D08E3350546F4DC5426DDACF45BFA53C420E864ED88853E9F641E8A
+      2D3024BB93BE7D9B0EB0EABC9B2D35CBAAA46335967C2FEACB8B87C803A5A3AE
+      D7D59DEEA8EFB8CBD52BABCAAAA593B58B47B67C05F1EEFB48E4614D0588BBBA
+      9DEE6E57BAB19EC0CDD3A8373A148F1B4857DB2F17E24E9F02621E96548030EA
+      12AE6E97CB951E4AD773887AD43C4599D554599D73F9B0A3447D3EB5792F201E
+      D07575BDDDD43AD766E3D0DDFA7A9579E22A2B924EA19D34CD6AC45B4293070A
+      78598195B46B2C78C7CDCBAB37142F2D9D34C70ACA2C65EB7E73F3EB89300E48
+      018E3FEBEA70B924ED1A1BC958A1E2AE1C7AB3D2464511E7D8164521EE346576
+      EBC5CBE666269E17AF3820D6F1B68E43B4CBB777F5DA724BAB6CA4A874CAD68E
+      26E2964A3B6E1D170F9B17C02FB5759C34F14E556695E60DC54B49A7D14E5D66
+      B764EB082F27AE423C58A7B08E6B27F48E96DB92D2A95A3BCD34BBF572ADB959
+      291E4AEDB1A6456D9DA49DB6BD93C9D5961F76A4CC2A1A3B95754CBC1E88777C
+      67D85E97CA3A365308DB3BC6BA29EDF26556B26E4D2B1EA65A58A7D4AE58995D
+      375363156536DFD815CC5B5BBBB5308105E46389CE3A36CA96F0AE5495ED176C
+      D96E15C6893549BAB5E6B55BB74221CF70C0137A3D81BDDAE347426F9DD4DC15
+      6BEF72666A2C2FB35BCA7182641C318E321C20DA858878381775CCC80AACCB6B
+      D798365B6545DAD5D5FAB6EEF3902B18E7F1843C0182877A177ABD8477E25859
+      B723B0AEA09D78F5AEDF4C6BC7CBEC1ACDB8827252D431ED98789E3E6CD51E1F
+      7A84D6E5678A22DEE5CC855D5DBCF3A5DA381A75DCBA61F9CFA10588775C70F7
+      BA5C06DA89DABB75B3DA6D787470EB8876928EA15B9ED7186A8FEF38A1D18EB5
+      771DD2A3BE43D22ECAD04A1715D7D8BA0D1275EC11628D1CADA98140409576B2
+      78D8303B062556655DB782DB0AEE76E8C84D3194DE45D97706446CDCD2F18C91
+      D74E4E3CD2E22D61DFA2EA1B3B9574AE9D9D5E99A74A7A753C5D64CC28A48BAE
+      CE6C2FD25BDFE9E92BC26B69A25006DEAD85BE71245E553357F37CB3205D6F36
+      DBE3F7FB5BD8C3EF6F2AE0D7C39FC8F44B7937159D4964C23D7E214D3AA427FA
+      B876A17CDED1B12368DBDB1FC77B53BD7CFE2A56F36E53B26E276BA1B8C9DA4D
+      AD2EF229D42D7C9C70AB3821EFC2F6A9D38E49D7D5D0D0D5B57780A1B65A39FF
+      26565313E381D7DD6B6586744BDA4DAD262CEDE7F729270A593A42AA2BF57609
+      FB165589F726B18E107BF57CB37BC7DACA05D72E5A9B387138ED424AE9B8780D
+      FBE3982DAA90F03BAE1D09BC579B594BFF044FBBE8D4A2B5AD7C6F5F7ED94E2D
+      1D8556DAAB7897AA0DFFDC831A990773166747A6DDD46AD6E2FF414ABB905E3A
+      2EDEDB7154DA2AE3C7AF62B275B1579F58FB3778DA4D6D9F3F947654BA548300
+      D2E2EDE3429FEA9A279461F7C6EADCC8B54BB8AD6B47A34E275DAA20DEDE018E
+      BD570D6E77B61076350F562CC6D5A709324E446B3356879AD774FD44505E0BEA
+      A552A4D2E2106835861D69ED2CB650EE193A51AC5AD56E3C1008E8A5D3445F2A
+      452A2D02AF3A50861DD1CE5A9EB8C3AB54BB7EABDAF50516825D04629648BD54
+      5EBCBD257CB25435D07253619D65EDBCDB6CD5CEA276EE7030684BDA38C96452
+      A45F5EBCB7E3F0AEF2B9F1EEC1A1B573BB13FC108045ED9ADE066D5A74F6E513
+      AFE1006B29158F2AECACA65D66357A08EDFCFB7AEB34F629DB3C5269713EA0C2
+      B9AA1C28AC6A97D88C1E22EDC26F6DC650FBBA0AD9B78FF301D5335050EDCC67
+      557647BEA2226A6193A2E760CF16B49549522EBDA9BD031C7AAF9681822E17DF
+      D4A13F06E5CD24F2F4EEB83AE42B2AA2FD8B091D7A3DC21312074B07FB26A493
+      09126C0DFB9378FB2A95F01B558D1511D32FE5B5AC28AE9CEDE8505EC843AF5F
+      ECEF8CE7A9DBD0F76113FCD28905125ED421D3C6251BFEF2E8E1C3CBBB231869
+      2B944FD435965AA645B082EC5FB97D7B883EE8A515AAEB16A353D168742AC23F
+      4B9BFEDA08E92FB69EA0D74E2C0419E68C0B12E38872CBCB767BEB7C6BFB6304
+      5E35CCB17A5ED54CDFFB41D1B4535C399B13DEFB241E09798469B710A45197CC
+      2FD6192B674B763570E33E26D85B1D8EF9D6D6DD914FF11E561E3D4635767ACC
+      F9B752DAE5AF9C5D17DF9E7D58A81D97CE445965C63DE4C67D6C275C76505A5B
+      1D08BC0AE4F3773103E9DADA4A6A57B8EF5D4E7F130A629D47A4DD9289BA6A4B
+      A65859B5DB25E11897E71D0E493C045E05D6D89A52DA51E99CA5B52BDC9027A7
+      FBE41D324E78C4DA25CB0CB91409B947CA90D35AE7989F47E0551CDEB958ACB4
+      744E43EDE4F66E5D5F6337D88511A6D38E0D1AC29093AD731498478757715C2D
+      DEDA4D8FB531EB84DA7995DA49ED5DE1D64FD2A7DBB19B9D84C4453658BAACB2
+      4E4E977122EBB878F308BC4A22FBEE81817465A49D5C6673EAD68E8D13C4BBE1
+      B2D38E851C5F20B117318E59D7EAD0784766DADD91CFF07656EEAA9D2CDD3D49
+      3AB1764D3F1B1DD279B7AEF928CF617A839DE1678172B4A3E9272D90140DB9BC
+      75ED0EAD77B4D23E9E44A5ADE889426AEA4A68D7F2AB7B63B3DAF66EBD5FA15D
+      3CB211627710136B17D428D745438E2FC9D94BA3CBBABC78EDE8F02A84B99858
+      3A8575C5B4BBE79C56045E87A2CA46F810CBAD0B18A69D14720619C72003865D
+      689D345A3C9EC46E59250CB22BBAD66E5A957425B46B6BBB3756A8B4E982767C
+      F9840EB1D27DEB4AA45D57AAC1A091531A27AEB00AF330D25602EEF3DA41964E
+      124E6779DA39DBEE292A6D3A5F65598D8DE46F0CFB6CA188762CE4CA314E4929
+      EB78E07D86C03BEADC506B47F7249CCEB2B573D2609C9E55B477B2766C9CE0D6
+      2D046D02ED52F2EC601470CB85A0132C9D883ABC5D14DAA38E6A6B4C2C5D49ED
+      B8784369B9BDCBF11ACBC68961493A9B5E3BF7889DAE02975153B559E730826D
+      5AA0D056CEFA4911E90CB4A3CF8F8D36A679995D6761C7C689BC74A2B41BB15B
+      E2B2A30C58E0E1ADAD8CF593E962D295A15D9B93B478695A666973D7C96EC52E
+      4B674B0AB4F38ED84D26DD72D9D6B1C9A21D815709DA4D8F15B7CE503B27FDBB
+      ACD2DEA55536128F0E0FF3F374D25E579969B75CB4B69AC83A79DB0281778427
+      59AE5D49E9CAD18E26DE18112F4DAB2C19278659D24967811F3D9C14F676869D
+      DCB2FA2913D651F17647F0FE1ED9D562F9489DF390DAB14A3B3A7477BDBF33B2
+      31BC209D05666796ECF6C9A269671470D6B28E777838F07E74B58BC58CA42394
+      A39DB498B29E1BDCA03733E1A7CF2F53EC9727F5BD1DF9AE491CED26996F47A1
+      3D9A78E7B41B6196D38E7947C4DB5A48F2D3E76C518EAF918C7C8049B675BED5
+      3CF3BB38957204F9F90FAFFFA80CAE7FA3BF72EC4BF18FFEE91FFFBD427842B8
+      2271FA8A5EBBAFC977CDF1130B9C39F31FE4DD514CBBDF5DFFEA922167FFF81B
+      81761F7DA4FBC16B97FEFEFD3F7CF77B5FFCE2A7840B84D3171802ED2E98E5C9
+      45F39CF9178E421D49BEB97EFDAB6B672F9D2D8D5E3BB7FFCB6BD7343F75EDDA
+      B7FFFA9DDFFFFACFDFFAE56FBF3875EA1453EF3441A8DD69F654F95C38FDE48C
+      392E5EFC278E051C51FE7DF2FAC993FF63E77C42D368F338FEE4525F16A17810
+      07112F63DABE04DE60F1A46F50F614EA06D2B2320B7350C925243A172B158A6B
+      0ECECDA89150858D7F0E4AAAC1B4073DC45E7AA9A1A7549240C8A5905B285B1A
+      7ADB3DECFE9E676674FC9FB439443B5F314E93A697F9F0FD7E7FCFF34CDF2DDF
+      183BD4871D40F7C9AA7BCBBDC8AA9FD3A6590C9EC01E78DE2D6007BA19778F71
+      C02A9BB37773DD8E603716BCF16EB70CF9FA5EA77BAB09BE78ADB63DA7170212
+      78F7EEAD3CE36F03BB1BF9DDE3C77F53F629EEB8DB612DFF94DB2DDF07E83674
+      1BBB9AA5178E031BF89DBF03DECACAAD607713BF7BFC977FFF4BB1BABBAB3FF7
+      45EC461ADE18B75BBE0FA56E6343A7DBD5702A950AB053D3C09D04DECABDDBC2
+      EEB76B5BDD5765E1E42E6BFBCB9B9999B1E08D743B9CAF560C9DF5AD461354A9
+      70CA82DD01772601BC5BC4EE5A7E876709E5CEDEE96EF74486DD70F046B91DCE
+      570C1DA14EB324622772675A80E1622076CF7E0CBBDFAE354B84943B7BB7B5B8
+      25C76E58C51BEE7642BEEAB036803A0F642C2977843BDA6FC2E025360760071E
+      4886DCDBE60ECF12CA6DBDEB7AD083DD60F086BA1DC9579DA05DC00E573B952A
+      8BB1EB70B760F20EC44E5C61F9E336B9835942D9979800957AB11B94B443DD4E
+      287544386271C6929425A2692968476027A2F7C7EDD43B9825946593895A4191
+      83774DB7D3BE6F43478A5D073B5B9B3B7A613C76D2C2F2CF7207B384627593A1
+      A7FBFDD8F58137D0ED2C52A923C50E47AC98B162B9136296A6F5D7C3EE06E87D
+      1816B05F1965B16E3246D9BF9FBF9919A4E5316EF7A864D5C944A8C3CB27183B
+      B1DC49DCD1D7C6EEBA6DEF83B2053BE1EA5E411952F106B81D5B95632744AC90
+      B1B29415B873FA6F84DD756CEFC340AB539C6E62DC6EAEB43633330EBC01D8CD
+      CBB0138B1D593EE9C60ED73BBF93BE317663D953AC6EC2B9FBCFDA50EEDA156F
+      2F3E370A3BA1D849192B2B7702773F8A9D7482653C778AD54D1C767FCE0CC76E
+      E69D00DE5E69B1F7D73AD859C562D7CED8F6CA9D18B33F83DD70F614AB9BCE72
+      274BDABDC3F5116E2746ACC6D3C6EEC5EB367684BB14DB87DDE60DB013D17B36
+      903B728658196027CDED1E94466247C0DBBBBF3DD4EDA462272D9FF4943BE0CE
+      5FCBF56E9252D14062F3DE8DD5657B1F14AB9B643D1C95B22278FD3385849D55
+      2A769D6AD75DEEA0DE39F57D291B35C90F82DE94BD3677F888936275136977FF
+      381F6377A0BDF3EDC16ED72976B28C95ADDC09DCD5C26CAFDBE1ADDA1F05EFDE
+      33613FED83627593ABB9D278EC66DE6CAD0F76BB76C4CA32B62765D5CF9D74DD
+      D5E77678B3F647C05BC1125CEFAF5F95CDB049753BEAE1DADA78EE2CD548D7AF
+      1909769D6227CFD85EEC803B7F3DD48F1D3E9D82C17B766DDA568441E4A5A0EF
+      1F95789D5CAD7F196B77F7B59F0A175711D9E21885B193153BF9F2094E5979B9
+      237E978B66D83EEC24F0AE616E9836C29B1B6430B8DDDFA3CA69CE49B6BB47FF
+      1D83DDBE56AB7D6F2D582F5A57A7C7922EACF262D7D9A2E85BB913B9ABE973E1
+      54D48B5FA0B084DD30F0306B1DDE44DC0C06C3AA611564701B2E79E5D64DB6B6
+      F747A5ECFE7DA0CEF21EBCAD5028E8CE44E97A22B6ABDA75CEDCB5E5A79DB51A
+      AD2732051201934C72F03ADED6451B816DD5200AACEEA3F28CCEA46B71EBCD68
+      E8B0DB91434E568C9E204C9D47333863FBCA1D1E67FD409E28FFB70593691878
+      1DDCDC92B7B57913A15BBDCC28776DF2F5B46BA8586B6BE6DDFEB9568E1D214F
+      BAD8D8F5783C5D196B76883277CA9DCDD6397CE7A745F5502781D76E6EDDE6D6
+      2DB7411925A6A3DD2D760F15FB6D49D069B5126C67D5EA9978BD1B4BA7631277
+      9C197BDC9228D9CA5D3EAFEE3A7C27C83F08BCC4A67B75046F52BE2AA3C494C8
+      F850E6766BA5ED27DBA027DB3B7609BAF6933AD62AF5A855108A1D9766281FD7
+      593E31AB7C11510D875948595BBE189271E76F3BDE00EE4CA6C4ECA6DB3052CA
+      2831A576B7B6F6B03D6AECC9B01393B5CA860876304E703E86F5719EF6168559
+      25352EAAE2303B04EC9A2ED4842BFC52D35D1AC0DD6C62763478304A28776B7A
+      342FB3BBB5AD877F6E1BA927A7A725BB1DFB9DC56EB17C2AE04E07EFB356EBCC
+      0A9F50ECB898CF07218BFB9D07CFB16655BA52C95054A4528901760750EB003B
+      166387FB1DBCC9516362774EEC7A78A302449E69246FA06E163BDE9098855142
+      C9D7E91A66BFACC9478AD2FC7CDC6ED11E964A5A8B762B7EA82DB5AAADD3D396
+      CE4AB0BBB83AAD54D21ADCED384DC307D7418730C1BEF2516CEC15CC164B8D54
+      EA286B4B62EC6CC9FC512A95C7FF1354391C8DD6F54EBA5C8FD6CBFE6F8993F0
+      49385ACF9DA4A2E1C002C10E6B20786EB792AF53D7EE9ECADADDFE3260B7034E
+      B7639C3BB49FAF1B770EB7A97923A2D8AB4295625A6745234ED206846C63295D
+      A4E0071595598E9D63A942C1B7F93CC12ED9CCC01F5C2975320F6688D85CADCE
+      E05F0A3B7319CA45512E86852FE450CAEC30F0DC2FBF7F64950176DADADDDCD6
+      5A6753C24EB0B36877D02260F704017608158F8B28737181D8568B72458E2391
+      988F651B9A0872158B88693864D8991D69230AF188F2E290CD1FF014CB8710D3
+      544729171FF596CB0C62781685CAE50C7265A011BAE0C7AE591976BDE0BD345C
+      8694B32653C8DDB66C276C1076C717852B54AC12EC104CB05C8CC3D8358CC60A
+      172BA26339768E600545820775C4E4F380DD51081D81D1A114BCA37AA7DE5FA7
+      A8301D0EA1700EBE610A23A61E082314EEA46C0F78EE9797BC4BB1BAA99C2AC8
+      CEACB0133608BB536BA1256257451453D170043B1F0AF9628D088A7461E789A0
+      63CF3F9B886D62EC3EB34C339BF722EF11C3346BE401465E5FF3F32895E351B8
+      7642854EBE9D506DEC123DE0E17C559ED099E2A9627F5F582F19889DAE8DDDDB
+      0A426CA41114B0A358A86628D48B1DCB8418843E63ECA0C931A11085F8145BCC
+      27FD3460E7A59D4EAF841D12B1332D74B91D010FA05B8D2AF93AC531FB74DF22
+      AED28DC18ED3F84208656202766C112F10577AB10B45225EAF9784EC67C6C5E3
+      6327F5CF1460F7BC17BB5C07BB402F76B301F76586556ECE344FB3717B1F7673
+      DA3D2D60F75E8E5D9A0B72B16323F2E149368D42E960D06C56A97AB0ABA81C07
+      369BBA4942D6954FAAD5C96413C68AFF256BB497CAE86B7A7E3076894ECC2602
+      B3615E396A32E576B7B865EFC62E8EE6E3873B7380DDB11C3B4F23E649B30276
+      0D96ADC48241E9410A11BBA50ACA34965E67B3780125DF64502A7B90CDAAF345
+      CA9BCDE6FD75E4AA97EB2C0AC3244BB0CB89D875CD14894022EC0D290FE84CFF
+      347B6E17B08B2304D859B6109A5B87DBBE7316C1D88993AC2F5D845C4528ED63
+      A906F81A558C648A3E296411C20B280D176222990C6F6B52A879E0455486E733
+      75750A513CCFE7F545B28092D19743A85E8349360705AF073B80EE44D9F4FF35
+      74AA1576C34A8F1E40E25ACE4FE7105A5F04EC04B79B07EC5826DDC0658B3DD6
+      A419A6116C44C89FDAD8B918B25CEC2BE27F2F63CB33C67C321FC549E9FA9CCC
+      7AE12F1BF3B61C7E8291CFD504B76342B95A8E759D984CA6841CBA8CE274BF4A
+      BDB3E0B1C272588A1FC285E5BC148F6F95E25BD6EA555567BDB86ABDDDF5F962
+      9AB40F14237BB21C174BFBD2E9465068770E4F9A6C943954B1743A7D94B71D1C
+      1D1DD892D9E6D1D151332B5E6469BA1CAE87CBB4539FAB979DFA70588FBF2400
+      BB8044DDE625AF40F7EBACA294EC843B3BF9D0DA417B76FB27ABB5804F0214AC
+      BB1A8EF378E0CD719C067F6A345C909CEC14670A7CC6937CBE82AB83A4DA964C
+      DAF03461C32FE122F95CAFFFFDF71ABC404E270D432D8D4F1EE3A30104BB4060
+      B6AE6CBFFE525ADF12B893D652F0A7FD137E0E5B7A78C243DEE2792772C2D361
+      6E4FB22AD5FFD93B83D7B6B13480FB965358568F05D183DE438158450261A824
+      D80A1A81240B9510041ED530609AB3C914330D2D864D31B4074159764269F730
+      2D7BE8D236A73DEC1CDA8B7B9A39B6D0DDCB5CFAAFECF79E645BB2E5C46DDA25
+      49BF1F253896F49EB17EFDBEEF3D3D29D397F0E64BB1BAB858633C7D719BDF4F
+      B17179C286506FB2064F0C5FFF735FC150F74D8D2AE4F8B76B57FE54E50F6FE7
+      1F775261BBB5B684ADD773375488D59EF97D3C972B4CD7E0FDC8A5C391C4B7E7
+      DDA3DFAECD6957FCE989CA5DB1A53B15976BB756A7DD5EAE5D29DE4DC3DEC6F5
+      8D1F51BA6FD33B65D1BBB795A727CE59B77FB0B6D4BB974B83DD42BCCB797688
+      D27DABE2FDF7F739EFFEBC34C5FEB0BD76B07EB0BDBA7633EB16BCFBF7E55787
+      DF43B8C533F0AD4EDF55BCCB6FA4A8B1EEE6FEF6DAD6F63A70B0B4B8ABB5AEC8
+      B37B55ED5E1DE275B06F9B6A9E7D3FFFB8931745A083516B4B68B7BEBE24E03D
+      5D52D82D7A87D2619AAD8C2BAEBC9DFDE5896972DDBF232ABA16E4D89CFA4CFB
+      F2EA62B0DB9BC5BB0D940E2913FF74AD3CA2A8A6D8FDA96233ED78A66D9D50DC
+      DDBE340F4A8754E25DFF9FD3F9BBB715EB7E283FC86E6D7FBD444D89F77A3EC5
+      4ED2EC5E9166C54002871148E19DFED76B45C02B157637F7ABB9B475B05EF16E
+      7B2EE2DD795D53D8CD0ABCBD8D8D57F76FE0DA61A4E45D31A07D3F7D8EDD0FF3
+      F55B6BBBAA1D17AFD55A9265CB295698B7C71FB688D22155361FF10BB457DEE7
+      29763ED0E5DAAD2F502DF15E96FE504035D2F1F527BB789704B248F4F3EFD7AE
+      BCFD177FDA8478C8C9827607EB355402DEEB85B91351E15DBFFEEA2FBB77B1A6
+      43EA32ADF6E8A72BFF785117E8E6C7B1CB32EDD3F9B913E1DCDEB3C30778190C
+      595AE1453FBF982EA65B3BB1B42B65DA5639CB5EBD5D4AAE1B10E8F07630E458
+      EFBEBBF764FB71BD78AD65D6E563DAD6F421C6572729169CBB84810E5985BB1F
+      DEACD58A778C76B34CFB7A5AD8F1E4FAEA97DDE758D1212B85BCBB470F41BCD6
+      CA39B624DE9DA7796107CEF1C78C3DF81ED70D232BF3FCE8CDF6E3C7AD13A74F
+      AADE4189C79FD97E7B8F1774CF0E776FA073C827A6DAA337FB931B7456C8B193
+      807767EBEADF20B73EFB65170B3AE47380C1C5C36D6E5EEBD8E99339F15EBEBE
+      84CE21A7CCB54FFEB8BD9507BD1373ACE0D7771FEFDFC535C3C8292754EE1E3D
+      79C897156F6D9D1CEC40397C740EF265C46BDCB807EADDDC3F3829CA7D78DE68
+      28F88D215FCA3C59FEEEF987C38F1FDFFD5A17E3DE7D3C3C7AC047AD985A912F
+      E95DF143B9FBF7DDDDA343F0AFE0F0FED1EEBDE7601C0639E4ABA24CE29F1836
+      280D05870F088220088220088220088220088220088220088220088220088220
+      088220088220088220FF7764FD96AEDFD2F0C60E6475F4388EFB1ABCD0E0457C
+      EB735AF052C7497B267E97C8CAA12A330CC376E155621B86D5FB8CFB1FFBFE88
+      D2D140C72FF362186146BA7CD266338AEA4D111B643DDA3C3EF9C93D555525AE
+      9D4B5495862B6B276B93EE77022A4934D5F08C5D087606869F2CD7204A2D3F69
+      8486EDD56DD53CD8A0747C63BC738276841143443B8B10B6BA76F1401A76B5B6
+      E567B750BB0B841652A206CB535728513ACE7CAADA9D9AAD1D9B322B1930A686
+      DA57D1AE4D286DF70CAA06DD216A7781B46B5389D9D131E79D8D869EAD3221CD
+      3C89A512D60C18A16DFD6B6827A78C51C79398EA7750BB8B54DA750C4ABDE5E3
+      C38E3D52BD281DD161549BA1F986908D8C4E6D71172789DBD14F11ED9AC648CA
+      E2E1883A1126D98B84D9099BFAB19BDD5B8D7EAF17D77925C386BEACB961A75E
+      5CCFB6ADA07B0AED369330D1E4B89745A8DD4513EF78094CF1089E65F1D0E41B
+      E4CD6352342F0A3F5B3B1849CBF947C4912CB2AA336D8B50FF54DACDF2396A77
+      C165F97217A03E55BBC80DBD7698EDA0761750AB7EE28A429FA3F4DDC44DA613
+      C69ADB1E8FC76918CFF68E60EF245AA9E1D89D35FC19DAF5BDA16D4992650C4B
+      9731FA45F7A8DD79070A7D63D82D3C0B0DDBF6BB8576DDD4202A6005D9746FD7
+      378CC05D49BB72C39FAE9D3B94544AA9E8BF3DD5ABE7DBA27BD4EE5CA2BB5933
+      CBA739DA2A1DF9C5ECAFD61EA9542AB473034A199C78C2A8D19C1C9849A39195
+      ADA49D43E9C8FE4CEDCCD0E6C6591653254925E1F4FF08CBBB47EDCE5B52153F
+      E340320C27D74E223498443B4F9588916B17079430C90F6C0627D89FCC98340D
+      95D9CDD546108CA8FECADA297A1445138D14CFA24C35D2B0D7F6C13B664FBA0F
+      2D26BA47EDCE0F5AD4CDDAB9075D1FC2DAF838ED4C4765CC6877E22C80134FDB
+      E6543BB5A25DD4CBDC6EDDE9573E4DBBD819A7CE247BF72CE83CC8A0305412DE
+      BDEA2953ED54D4EECC0F17E2F2AF9D3490465E1ECA208890F438EDBA3E043B87
+      CBE65A445287FA12ED128B5983F8F4D12E9146546D171FD456893A2C1A4D24E8
+      7EA0A176E7C6BA9D7190EDCC2A2738B38CA6D16ADAF50C38C189A80307542276
+      5CAF9DDC33D4D1B07FFA68D73128B1F2852DD190113AB10E7E53251644A8DDB9
+      A14746249D45226548249A8F1E4ED6CE21840EC4C9D6DB708A4971997521DAF1
+      C3D3E8F4D1AE634FB5E307E6C68BEE1D6E7D5F46EDCE09664A256A2495F3AEE6
+      6B4784764EE338ED78C411514CF746708A8B55780BDA093D774E11EDD422C94E
+      B5EBDBD0A437350A46D712F151BB738328CFD2D25586A6C198242623BA368F76
+      CAC49B89769B33EDF809363231B808E114AB9D25B55D6880CACDBA8BB44BB56B
+      6425ED60B422E4490CB5D0AE0D2A06B3B4BDE971ED7630C99E1742092C2BAF03
+      86525D6283AEAE47210C0F49D0DCD1F538808ADDEE453A279A69C7F7558384BF
+      DBE445BD78A5EBD97C6D97D80C3277333FBE8233D1CE2CDE10DAF176A6D12EB6
+      8845830EDFE8112249836EA4C710EC546FD65ED416A565FE0B6A77F68170539D
+      638B6D3E19618C9D319F8C032983D409C0298959419A8E1D2705072713286315
+      64B3068EE30C615F3270D2710AAF214F57DAD4C50407F1E1E8397C389E6B6726
+      C5361F3A32F20649AE5D04FB80FED0F5C0804F44983574A00025A2DB693B0C3E
+      D338EF1E3E2D6A77C607B222CB95579FF3D40A2757A560142800FF28E5FEF113
+      4E29BF16C5CF7D315DDC0D20EB91E24D308BAAE262956455B5E3699737C63756
+      81C384769A37CADF2079E7452F6E91E1F9A7C83F1161E2B3E5BDCD280E53F323
+      2DD4EEBC69C713279C5CC261C6D0285E3103C29538B9F986E2E25877A8AAE29D
+      5CCCC90E52E9529920B3D5BCA14568AE1D5DDCC22CA15DDFE7C7E62D43243496
+      B6C47722B3EE51BB336B1DD78E5961591010CD180C0DBEB0C3EF699DD4869796
+      E5745D788F8930338B760D390A03C3805DAD7C03537301E7A25D43EE87437EBF
+      ABB4489E643DBAB8A58876727700078A962DBFA924E99286E6BBC7FB64CF2E1E
+      03EFC6A591EC186285ED6AFD246B7676CC86BCB9D369666EACC90ABC177A5993
+      9335A3C921A6DEEFB8CD36CF837EAF197ABD7C07776E765836B528EEB8F9E115
+      32376A3494B8D7AC216F44869EF3963B91D25036F5B8D3AC25AB74AF874EBBED
+      64F854803388CB07AE466FFABB1874F23936C5CC97AECB608CA9E47FB658D9DC
+      34058A595ED82937623E66603DCD348B1D4C53AE09AD8A62D6905FE5AFDB326B
+      443145D745889565B31EADDCBDBCA90168DD59441F8CF8EA8D89771D18A632D2
+      939726E5DA36429FAF4019631585AC4AD3A01654518366378E5DC78664391A47
+      2B1FBD19C5CD76603118690E77F0CB445645F30854F3308CB00189496414743F
+      214707FC20C22871FAF85D229F90663D6BA4FEAF9D3BD44118060200FA0FCC4C
+      B1058359825BCD0C098C0547B22C287EA06AB66E7F4E26C07720DFF33597CBB5
+      77C97557D4ABA2A8AA34662CE41C9BA55E077BD7D7209264D5BB6E6ABEE3DBCB
+      F99E73766C97EAD0CEFD732F8E641ABADB34A794E690993F650C29F40FAF3A36
+      5EB5F1F37B6696538CFA57362BFFB9630D000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000F09B375FC870E40FAEDB550000000049454E44AE426082
+    }
+  end
+  object Label40: TLabel
+    Left = 1272
+    Height = 62
+    Top = 408
+    Width = 268
+    Caption = 'User Name :'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -47
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label40Click
+  end
+  object Label41: TLabel
+    Left = 1616
+    Height = 62
+    Top = 408
+    Width = 116
+    Caption = 'dddd'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -47
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object SQLite3Connection1: TSQLite3Connection
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = 'base.db'
+    KeepConnection = True
+    Transaction = SQLTransaction1
+    AlwaysUseBigint = False
+    Left = 1112
+    Top = 56
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = True
+    Database = SQLite3Connection1
+    Left = 960
+    Top = 56
+  end
+  object SQLQuery1: TSQLQuery
+    FieldDefs = <>
+    Database = SQLite3Connection1
+    Transaction = SQLTransaction1
+    Params = <>
+    Macros = <>
+    Left = 832
+    Top = 64
+  end
+  object DataSource1: TDataSource
+    DataSet = SQLQuery1
+    Left = 688
+    Top = 64
+  end
+  object SQLQuery2: TSQLQuery
+    FieldDefs = <>
+    Database = SQLite3Connection1
+    Transaction = SQLTransaction1
+    Params = <>
+    Macros = <>
+    Left = 832
+    Top = 168
+  end
+  object DataSource2: TDataSource
+    DataSet = SQLQuery2
+    Left = 688
+    Top = 176
+  end
+end
