@@ -96,4 +96,6 @@ This was an early learning project, and these are the weak points I would fix fi
 
 ## License
 
-No license has been chosen for the application code yet. The bundled PowerPDF component is distributed under the GNU LGPL (`lgpl.txt`).
+© 2026 Hamza Ben Ismail. All rights reserved.
+
+Third-party: the bundled PowerPDF component (by Takezou) is distributed under the GNU LGPL (see `lgpl.txt`); this notice does not change its license.
