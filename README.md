@@ -79,11 +79,10 @@ Compiled units go to `lib/<cpu>-<os>/`, which is git-ignored.
 ├── backup/              # Lazarus automatic backups of the units
 ├── pack_powerpdf.*, P*.pas, Pdf*.pas, PowerPdf.*, xpm/   # vendored PowerPDF package (LGPL, see lgpl.txt)
 ├── Example/, LazarusExamples/, PowerPdfRef.pdf, PowerPDF.zip  # PowerPDF samples and reference
-├── GESTION DE STAGIARES.pdf   # reference internship report on the same subject (see below)
 └── docs/screenshots/    # README images
 ```
 
-About `GESTION DE STAGIARES.pdf`: it is an internship report on the same subject (an intern-management application at Tunisie Telecom, 2020–2021) written by another student. It describes a separate Java/NetBeans/MySQL implementation. It is kept here as reference material and is **not** the report or the screenshots of this Lazarus application.
+The requirements came from a specification provided by Tunisie Telecom; all of the application code in this repository was written by me during the internship.
 
 ## Known limitations
 
