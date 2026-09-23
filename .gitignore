@@ -1,0 +1,25 @@
+# Lazarus / Free Pascal build output
+lib/
+*.o
+*.ppu
+*.compiled
+*.obj
+*.a
+*.rsj
+*.rst
+*.or
+*.dbg
+
+# Delphi build output
+*.dcu
+*.~*
+__history/
+__recovery/
+
+# Lazarus editor backups
+*.bak
+
+# OS / editor
+Thumbs.db
+desktop.ini
+.DS_Store
